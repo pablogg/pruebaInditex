@@ -35,6 +35,7 @@ Here you can find the postman file to launch the tests [link](https://github.com
 
 ### Info compilation maven and docker version
 Docker:
+```sh
     Client: Docker Engine - Community
     Version:           20.10.21
     API version:       1.41
@@ -63,10 +64,12 @@ Docker:
     docker-init:
     Version:          0.19.0
     GitCommit:        de40ad0
-
+```
 
 Maven:
+```sh
     Apache Maven 3.6.0 (97c98ec64a1fdfee7767ce5ffb20918da4f719f3; 2018-10-24T20:41:47+02:00)
     Maven home: C:\apache-maven-3.6.0
     Java version: 11.0.16.1, vendor: Oracle Corporation, runtime: C:\Program Files\Java\jdk-11.0.16.1
     Default locale: en_US, platform encoding: Cp1252
+```

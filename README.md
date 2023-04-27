@@ -24,6 +24,10 @@ http://localhost:8080/inditex/swagger-ui/index.html#/
 ```
 
 
+# Postman
+![logo](https://raw.githubusercontent.com/alisonhall/postman-introduction/master/assets/logo.png)
+
+Here you can find the postman file to launch the tests [link](https://github.com/pablogg/pruebaInditex/blob/develop/PruebaInditex.postman_collection.json).
 
 
 

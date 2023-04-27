@@ -1,0 +1,16 @@
+package com.prueba.inditex;
+
+import java.util.TimeZone;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+@SpringBootApplication
+public class InditexApplication {
+
+	public static void main(String[] args) {
+		TimeZone.setDefault(TimeZone.getTimeZone("UTC"));
+		SpringApplication.run(InditexApplication.class, args);
+	}
+
+}

@@ -1,0 +1,48 @@
+server:
+  port: 8080
+  ssl:
+    enabled: false
+  servlet:
+    context-path: /inditex
+    session:
+      timeout: 1000
+  # Enable graceful shutdown (from spring Boot 2.3.x)
+  # Default grace period is 30 seconds. This can be changed with spring.lifecycle.timeout-per-shutdown-phase.
+  shutdown: graceful
+  forward-headers-strategy: framework
+
+spring:
+  jpa:
+    show-sql: false
+  h2:
+    console:
+      enabled: true
+  datasource:
+    url: jdbc:h2:mem:testdb;DB_CLOSE_DELAY=- 1;DB_CLOSE_ON_EXIT=FALSE;TIME ZONE=UTC
+    username: test
+    password: test
+
+
+
+springdoc:
+  api-docs:
+    groups:
+      enabled: true
+  swagger-ui:
+    path: /swagger-ui.html
+    display-request-duration: true
+    groups-order: ASC
+    operationsSorter: method
+    disable-swagger-default-url: true
+  show-actuator: true
+
+info:
+  app:
+    name: @project.name@
+    version: @project.version@
+    encoding: "@project.build.sourceEncoding@"
+    java:
+      version: "@java.version@"
+
+hibernate.jdbc.time_zone: UTC
+spring.jpa.properties.hibernate.jdbc.time_zone: UTC

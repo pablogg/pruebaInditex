@@ -1,7 +1,7 @@
 
 [![N|Java](https://d33wubrfki0l68.cloudfront.net/f8099f57973f45c668f8cf7d7c3e8987e81dd93d/9b944/assets/img/news/java-note.png)](https://www.java.com)
 
-# Decisions
+## Decisions
 
 - We use Spring Data JPA to access the database.
 
@@ -16,7 +16,7 @@
 - A Postman file has also been added to be able to automate tests if necessary.
 
 
-### Run application
+## Run application
  
 Build project with maven:
 ```sh
@@ -39,13 +39,13 @@ http://localhost:8080/inditex/swagger-ui/index.html#/
 ```
 
 
-# Postman
+## Postman
 ![logo](https://raw.githubusercontent.com/alisonhall/postman-introduction/master/assets/logo.png)
 
 Here you can find the postman file to launch the tests [link](https://github.com/pablogg/pruebaInditex/blob/develop/PruebaInditex.postman_collection.json).
 
 
-### Architecture
+## Architecture
 
 Hexagonal architecture, also known as Ports and Adapters architecture, is a software architecture pattern that emphasizes loose coupling and modularity. It consists of three main layers:
 
@@ -54,6 +54,7 @@ Hexagonal architecture, also known as Ports and Adapters architecture, is a soft
 - Application layer: This layer serves as an interface between the domain layer and the external systems or dependencies. It contains application-specific logic that uses the domain model to provide functionality to the end-users. This layer is also responsible for coordinating transactions, security, and other cross-cutting concerns.
 
 - Infrastructure layer: This layer contains the implementation details of the ports and adapters, such as databases, network protocols, and other external systems. It provides the necessary interfaces for the application layer to communicate with external systems, and adapts these systems to the interfaces defined by the ports.
+
 
 ### Info compilation maven and docker version
 Docker:

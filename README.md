@@ -3,16 +3,11 @@
 
 ## Decisions
 
-- We use Spring Data JPA to access the database.
-
-- I have used H2 as the database, because it is the one indicated in this exercise, but the database could be changed very quickly without any problem. (MongoDB, SQL, etc).
-
+- I have used Spring Data JPA to access the database.
 - Use of Hexagonal Architecture, since it allows us to create applications that are easier to understand, maintain, evolve and test.
-
+- I have used H2 as the database, because it is the one indicated in this exercise, but the database could be changed very quickly without any problem. (MongoDB, SQL, etc).
 - Security has not been implemented, since the exercise does not ask for it, but we could use Spring Security if necessary.
-
 - Unit and integration tests have been carried out using Test Unit and Mockito.
-
 - A Postman file has also been added to be able to automate tests if necessary.
 
 
